@@ -1,0 +1,121 @@
+body {
+  text-align: center;
+}
+
+.moveBackground {
+  background: rgb(238, 84, 151);
+  background: radial-gradient(
+    circle,
+    rgba(238, 84, 151, 1) 0%,
+    rgba(33, 112, 207, 1) 100%
+  );
+  animation: moveGB 5s ease infinite;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 15px;
+  display: inline-block;
+  height: 20vh;
+  width: 20vh;
+  border: 10px solid black;
+  border-radius: 20%;
+  z-index: 10;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 1px 5px 2px #bfceef;
+  position: relative;
+}
+
+.btn-particles {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  font-family: monospace;
+  z-index: 11;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: rgb(99, 98, 98);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.shape {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: scale(0.8);
+}
+
+@media (max-width: 969px){
+  .btn {
+    height: 17vh;
+    width: 17vh;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 768px){
+  .btn {
+    height: 16vh;
+    width: 16vh;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .btn {
+    height: 15vh;
+    width: 15vh;
+    margin: 8px;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+}
